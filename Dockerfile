@@ -5,7 +5,7 @@ FROM httpd:latest
 RUN apt-get update && \
     apt-get install -y git && \
     rm -rf /usr/local/apache2/htdocs/* && \
-    git clone https://github.com/Hussain147/experiment2.git /usr/local/apache2/htdocs/
+    git clone https://github.com/Hussain147/paac-with-ecs.git /usr/local/apache2/htdocs/
 
 # Expose the port the web server will be running on
 EXPOSE 80
